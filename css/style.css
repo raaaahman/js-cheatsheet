@@ -1,0 +1,109 @@
+/*=============================================================================
+  _        __  _
+ |_)  /\  (_  |_
+ |_) /--\ __) |_
+
+==============================================================================*/
+@import url(_normalize.css);
+/* Coolors Exported Palette - coolors.co/1c1c1c-59cc33-f2f2f2-e5e5e5-896c6c */
+/*******fonts***************************************************************/
+/*******Breakpoints**********************************************************/
+html {
+  box-sizing: border-box; }
+
+body {
+  margin: 0 0;
+  padding: 0 0; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+ul, ol {
+  list-style: none;
+  padding: 0 0; }
+
+li > ul {
+  padding: 0 1rem; }
+
+a, a:hover, a:target, a:focus, a:active {
+  text-decoration: none;
+  outline: none; }
+
+/*=============================================================================
+             _     ___
+ |   /\ \_/ / \ | | |
+ |_ /--\ |  \_/ |_| |
+
+==============================================================================*/
+@media all and (min-width: 72rem) {
+  header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem; }
+
+  aside {
+    position: fixed;
+    width: 20%;
+    padding: 1rem; }
+
+  main {
+    position: relative;
+    width: 78%;
+    max-width: 980px;
+    left: 22%;
+    padding: 2rem; } }
+/*=============================================================================
+       _   _          _  __
+ |\/| / \ | \ | | |  |_ (_
+ |  | \_/ |_/ |_| |_ |_ __)
+
+==============================================================================*/
+@media all and (min-width: 72rem) {
+  .navbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .navbar > li {
+    padding: 0.5rem 2rem; } }
+/*=============================================================================
+ ___     _       _
+  | |_| |_ |\/| |_
+  | | | |_ |  | |_
+
+==============================================================================*/
+body {
+  font-family: "Titillium Web", sans-serif;
+  color: #1c1c1c; }
+
+h1, h2, h3, .navbar > li {
+  font-family: "Contrail One", cursive; }
+
+body {
+  background-color: #e5e5e5; }
+
+header {
+  background-color: #1c1c1c;
+  color: #f2f2f2; }
+
+.navbar > li a {
+  color: white; }
+
+@media all and (min-width: 72rem) {
+  body {
+    background: url("../images/body_background.png") repeat fixed; }
+
+  aside, main {
+    background-color: #e5e5e5;
+    box-shadow: 0 2px 12px 0 #1c1c1c; } }
+
+/*# sourceMappingURL=style.css.map */

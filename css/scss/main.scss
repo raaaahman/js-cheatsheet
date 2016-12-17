@@ -1,0 +1,136 @@
+/*=============================================================================
+  _        __  _
+ |_)  /\  (_  |_
+ |_) /--\ __) |_
+
+==============================================================================*/
+
+@import "_normalize.css";
+@import "_variables.scss";
+
+//Set general box-sizing rule
+html {
+  box-sizing: border-box;
+}
+
+//Reset body margins
+body {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+//Default list style to none
+ul, ol {
+  list-style: none;
+  padding: 0 0;
+}
+
+li > ul {
+  padding: 0 1rem;
+}
+
+//Default link style
+a, a:hover, a:target, a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+/*=============================================================================
+             _     ___
+ |   /\ \_/ / \ | | |
+ |_ /--\ |  \_/ |_| |
+
+==============================================================================*/
+
+//Change layout for desktop screen size
+@media all and (min-width: $break-large) {
+  header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  aside {
+    position: fixed;
+    width: 20%;
+    padding: 1rem;
+  }
+
+  main {
+    position: relative;
+    width: 78%;
+    max-width: 980px;
+    left: 22%;
+    padding: 2rem;
+  }
+}
+
+
+/*=============================================================================
+       _   _          _  __
+ |\/| / \ | \ | | |  |_ (_
+ |  | \_/ |_/ |_| |_ |_ __)
+
+==============================================================================*/
+
+
+@media all and (min-width: $break-large) {
+  //Navbar adapt for desktop
+  .navbar {
+    display: flex;
+  }
+
+  .navbar > li {
+    padding: 0.5rem 2rem;
+  }
+}
+
+/*=============================================================================
+ ___     _       _
+  | |_| |_ |\/| |_
+  | | | |_ |  | |_
+
+==============================================================================*/
+
+//General font rules
+body {
+  font-family: $font-core;
+  color: $color-dark;
+}
+
+h1, h2, h3, .navbar > li {
+  font-family: $font-title;
+}
+
+//Simple colored background for mobiles
+body {
+  background-color: $color-medium;
+}
+
+//Colors
+header {
+  background-color: $color-dark;
+  color: $color-light;
+}
+
+.navbar > li a {
+  color: white;
+}
+
+//Backgrounds for desktops
+@media all and (min-width: $break-large) {
+
+  body {
+    background: url('../images/body_background.png') repeat fixed;
+  }
+
+  aside, main {
+    background-color: $color-medium;
+    box-shadow: 0 2px 12px 0 $color-dark;
+  }
+}
